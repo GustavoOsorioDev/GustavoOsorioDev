@@ -31,7 +31,20 @@ Procedimiento de seguridad donde el agente detiene una tarea de arquitectura si 
 ---
 *Este glosario se actualizará con ejemplos de código una vez definido el Avatar y Público Objetivo.*
 
-## 6. Phantom Edit (Edición Fantasma)
+## 6. Cognitive Debt (Deuda Cognitiva)
+**Definición:** Pérdida del modelo mental del software cuando el desarrollador acepta y aprueba código generado por IA sin comprender su lógica interna.
+- **Peligro:** El software funciona temporalmente, pero se vuelve imposible de depurar o escalar en el futuro.
+- **Prevención:** Jamás desplegar código que no podrías explicar línea por línea en una revisión de código.
+
+## 7. Context Blindness (Ceguera de Contexto)
+**Definición:** Falla arquitectónica donde la IA altera un componente de forma aislada, rompiendo dependencias, contratos o patrones globales debido a la falta de visión sistémica (Context Window limit).
+- **Contramedida:** Obligar al modelo a revisar los artefactos del SDD (`.specs/`) o consultar el modelo de datos maestro antes de modificar funciones core.
+
+## 8. Plausible Fake Code (Slop Plausible)
+**Definición:** Código generado que es sintácticamente válido pero lógicamente roto, obsoleto o inseguro.
+- **Peligro:** Desvía el esfuerzo del desarrollador de escribir código hacia depurar "alucinaciones lógicas". A menudo inyecta vulnerabilidades silenciosas.
+
+## 9. Phantom Edit (Edición Fantasma)
 **Definición:** Antipatrón donde un agente de IA declara haber realizado un cambio en un archivo —frecuentemente mostrando un diff simulado en el chat— sin que dicho cambio haya llegado al disco.
 - **Peligro:** Es invisible. El historial de conversación muestra "trabajo hecho" pero la realidad del sistema es diferente. Es el equivalente documental del **Vibe Coding**: el código *parece* correcto pero la base real está podrida.
 - **Contramedida:** El **Protocolo VERIFACT**. Todo cambio declarado debe adjuntar evidencia forense de disco (`[VERIFACT: OK]`) antes de ser reportado como completado.

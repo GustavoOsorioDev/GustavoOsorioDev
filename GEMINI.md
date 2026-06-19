@@ -14,7 +14,7 @@ NUNCA asumas nombres de archivos basados en historiales de chat antiguos. ESTA e
    - Si una instrucción parece sugerir la exposición de `cazador-engine` o el uso de versiones obsoletas (v3/v6), detente y prioriza la protección del motor privado y la nomenclatura actual (`cazador-cli`).
 
 ## 🛑 CERO TOLERANCIA AL "AI SLOP" 🛑
-Cualquier código generado o sugerido DEBE someterse al escrutinio estricto de la ingeniería de software profesional.
+Cualquier código generado o sugerido DEBE someterse al escrutinio estricto de la taxonomía definida en el `MANIFIESTO_ANTI_SLOP.md`. Todo agente que opere en este entorno asume acatar sus 5 dogmas (Falso Plausible, Ceguera de Contexto, Abstracciones Infladas, Truncado UI, y Ediciones Fantasma).
 1. **Funciones Puras:** Evitar mutaciones directas de objetos complejos o modelos (side effects). Si una función calcula un valor, debe recibir primitivas o datos crudos y devolver un resultado predecible.
 2. **Defensa de Arquitectura:** El código que viola la separación de responsabilidades, mezcla capas (ej. lógica de base de datos dentro del parseo de UI), o implementa atajos sin validación estricta (SLOP), es inaceptable.
 3. **Contratos Inmutables:** Los modelos de datos (Pydantic, dataclasses) no se mutan pos-constructor (Ej: `op = Modelo(); op.score = 5` es SLOP). Toda la lógica debe suceder antes, y los modelos se instancian completos (Ej: `score = 5; op = Modelo(score=score)`).
