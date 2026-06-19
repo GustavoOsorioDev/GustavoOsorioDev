@@ -95,4 +95,44 @@ Después de `git reset` o `git commit --amend` (operaciones destructivas):
 ```
 
 ---
+
+## 🔍 PROTOCOLO SWEEP (Barrido Transversal de Migración)
+
+> **Principio base:** "Un cambio global no es completo hasta que se prueba globalmente."
+
+SWEEP es la contramedida directa contra las **migraciones parciales**. Se activa obligatoriamente cuando el agente declara haber realizado un cambio que afecta un valor semántico global (nombre de dominio, nombre de variable core, URL de embudo, nombre de producto). VERIFACT verifica archivos uno a uno; SWEEP verifica el workspace entero.
+
+### 🚨 Trigger de Activación
+
+SWEEP se activa cuando la tarea involucra:
+- Cambio de nombre de dominio (ej. `gustavo-hq.com` → `gustavoosorio.dev`)
+- Cambio de nombre de producto o herramienta (ej. `cazador_v3` → `cazador-cli`)
+- Cambio de URL pública (YouTube, GitHub, redes sociales)
+- Cambio de nombre de autor, contacto o firma
+
+### 📋 Checklist SWEEP (OBLIGATORIO post-migración global)
+
+```
+[ ] 1. Ejecutar grep_search con el valor ANTIGUO en SearchPath raíz del workspace.
+[ ] 2. Reportar TODOS los archivos donde el valor antiguo persiste.
+[ ] 3. Corregir CADA ocurrencia encontrada (sin excepción).
+[ ] 4. Re-ejecutar grep_search para confirmar cero ocurrencias del valor antiguo.
+[ ] 5. Reportar resultado:
+
+       [SWEEP: OK] — Cero ocurrencias de '<valor_antiguo>' en X archivos escaneados.
+                     Valor nuevo '<valor_nuevo>' confirmado en Y ubicaciones.
+
+       [SWEEP: FAIL] — Persisten N ocurrencias en [lista de archivos].
+                       Acción: Corrigiendo antes de declarar la migración completa.
+
+[ ] 6. SOLO después de [SWEEP: OK] → declarar la migración como completada.
+```
+
+### 🚫 Prohibiciones Absolutas SWEEP
+
+- `✗` Declarar "dominio migrado" sin haber buscado el dominio antiguo en todo el workspace.
+- `✗` Corregir solo los archivos "visibles" o "principales" ignorando estrategia, docs y configs.
+- `✗` Combinar SWEEP con VERIFACT en el mismo grep — son protocolos separados con alcances distintos.
+
+---
 "Ingeniería real, sin vibes."

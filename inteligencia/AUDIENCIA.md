@@ -87,6 +87,6 @@ El modelo de negocio se sostiene en convertir espectadores en Leads y Leads en M
 | **Churn Risk** | Alto si no lanzamos nuevas herramientas. La novedad lo retiene. | Bajo si el Engine demuestra valor consistente. La utilidad lo retiene. | Muy bajo si la herramienta se integra en su pipeline de equipo. El switching cost lo retiene. |
 
 ### Métricas Clave del Funnel
-- **Tasa de Activación de Trial:** % de clones de `cazador-cli` en GitHub que crean cuenta en `gustavo-hq.com`. Es el cuello de botella principal.
+- **Tasa de Activación de Trial:** % de clones de `cazador-cli` en GitHub que crean cuenta en `hq.gustavoosorio.dev`. Es el cuello de botella principal.
 - **Tasa de Conversión Trial → Pago:** % de usuarios con 500 créditos agotados que hacen checkout. Objetivo inicial: >15%.
 - **NPS por Avatar:** Medir satisfacción separada por perfil. Miguel da feedback de UX; Carlos da feedback de arquitectura del Engine.

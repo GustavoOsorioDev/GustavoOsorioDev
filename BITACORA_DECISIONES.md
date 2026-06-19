@@ -145,9 +145,9 @@ Aquí anoto por qué cambiamos de rumbo. Sirve para no dar vueltas en círculos 
 - **El Producto no es la app, es el Motor:** Se factura por capacidad de cómputo/procesamiento ("Plan Builder: $20/mes = 10,000 créditos"), no por herramienta individual. Esto escala sin fricción con cada nueva herramienta que se lance.
 - **Embudo Anti-Fricción (Doble Nivel Gratis):**
   1. *Zero-Quota Permanente (Capa Local):* El código open-source descargado de GitHub opera en modo básico (ej. Regex/RSS) **sin requerir API Key**. La herramienta hace algo útil. Esto es obligatorio para no crear haters que sientan que el GitHub gratuito es humo. La credibilidad de la comunidad open-source está intacta.
-  2. *Bolsa de Prueba — "Aha! Moment" (Capa Engine):* Al registrarse en `gustavo-hq.com`, el usuario recibe **500 créditos gratuitos (sin tarjeta de crédito)** y genera una API Key personal. La clave se pega en el CLI local. La herramienta activa el "Modo AI": contacta el `cazador-engine` privado, revela el verdadero poder del análisis semántico pesado, y va quemando créditos hasta el agotamiento.
+  2. *Bolsa de Prueba — "Aha! Moment" (Capa Engine):* Al registrarse en `hq.gustavoosorio.dev`, el usuario recibe **500 créditos gratuitos (sin tarjeta de crédito)** y genera una API Key personal. La clave se pega en el CLI local. La herramienta activa el "Modo AI": contacta el `cazador-engine` privado, revela el verdadero poder del análisis semántico pesado, y va quemando créditos hasta el agotamiento.
 - **Calibración del Trial:** Los 500 créditos deben ser exactamente suficientes para el "Aha! Moment" (encontrar 1 nicho rentable real), pero NO para cubrir una semana de uso intensivo. El objetivo es que el usuario integre la herramienta en su flujo antes de agotar el trial.
-- **Migración Orgánica al Pago:** Cuando los créditos se agotan, la terminal lanza un error estilizado (`[bold red]Créditos agotados. Recarga en gustavo-hq.com[/]`). El usuario ya conoce el valor; sacar la tarjeta es un paso natural, no una venta forzada.
+- **Migración Orgánica al Pago:** Cuando los créditos se agotan, la terminal lanza un error estilizado (`[bold red]Créditos agotados. Recarga en hq.gustavoosorio.dev[/]`). El usuario ya conoce el valor; sacar la tarjeta es un paso natural, no una venta forzada.
 - **Defensa Anti-Abuso (GitHub OAuth):** El registro exige **GitHub OAuth** en lugar de email/password. Un dev real no creará 10 perfiles falsos de GitHub (que requieren antigüedad, repos y actividad para ser creíbles) para ahorrarse $10/mes. La barrera de ingeniería filtra parásitos de forma inherente sin necesitar CAPTCHAs invasivos.
 - **Impacto en la Arquitectura GitHub:** Este modelo consolida la separación arquitectónica ya establecida:
   - `cazador-cli` (Público): Lead magnet, construye comunidad, cero barrera de entrada.
@@ -157,10 +157,10 @@ Aquí anoto por qué cambiamos de rumbo. Sirve para no dar vueltas en círculos 
 - **Causa:** Necesidad de documentar el flujo completo de conversión de un espectador anónimo a cliente de pago, para no improvsar la arquitectura del SaaS en el futuro.
 - **Decisión:** El embudo es de 4 capas, cada una con una función específica:
   1. **YouTube (Tráfico + Autoridad):** El espectador llega por SEO técnico ("bot Reddit Python", "Pydantic tutorial"). La narrativa del video demuestra ingeniería real. El CTA es siempre el repositorio de GitHub.
-  2. **GitHub (Lead Magnet + Comunidad):** El usuario clona `cazador-cli`. Lo usa en modo Zero-Quota. Empieza a entender el potencial. El README lo dirige a `gustavo-hq.com` para "activar el modo AI".
-  3. **gustavo-hq.com — Sign Up (Lead Captura):** El usuario hace GitHub OAuth. **El correo electrónico se captura en este punto.** Se convierte de visitante anónimo a Lead en la base de datos. Obtiene 500 créditos. Llega a su "Aha! Moment".
+  2. **GitHub (Lead Magnet + Comunidad):** El usuario clona `cazador-cli`. Lo usa en modo Zero-Quota. Empieza a entender el potencial. El README lo dirige a `hq.gustavoosorio.dev` para "activar el modo AI".
+  3. **hq.gustavoosorio.dev — Sign Up (Lead Captura):** El usuario hace GitHub OAuth. **El correo electrónico se captura en este punto.** Se convierte de visitante anónimo a Lead en la base de datos. Obtiene 500 créditos. Llega a su "Aha! Moment".
   4. **Checkout (Conversión a MRR):** Los créditos se agotan. El Lead recibe un email recordatorio de recarga. Con el valor ya demostrado, la conversión a plan de pago es orgánica. El MRR crece con cada nueva herramienta que se lance en YouTube porque los suscriptores existentes la prueban gratis con sus créditos, consumen más, y hacen upgrade de plan.
-- **Métrica Clave a rastrear:** `Tasa de Activación de Trial` (% de clones de GitHub que llegan a `gustavo-hq.com`) y `Tasa de Conversión de Trial a Pago`. Son los dos cuellos de botella que determinarán la salud del negocio.
+- **Métrica Clave a rastrear:** `Tasa de Activación de Trial` (% de clones de GitHub que llegan a `hq.gustavoosorio.dev`) y `Tasa de Conversión de Trial a Pago`. Son los dos cuellos de botella que determinarán la salud del negocio.
 
 ---
 
