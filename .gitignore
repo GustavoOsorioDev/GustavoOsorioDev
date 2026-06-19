@@ -1,0 +1,6 @@
+﻿# Ignorar todo por defecto
+*
+
+# Excepciones: solo el profile README
+!README.md
+!.gitignore
