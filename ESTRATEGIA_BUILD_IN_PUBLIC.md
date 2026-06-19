@@ -86,7 +86,7 @@ No venderemos "suscripciones por herramienta individual" ni pagos únicos. Opera
 1. **El Producto no es la app, es el Motor (Cómputo/API):** Se venden créditos de ejecución mensual ("Plan Builder: $20/mes = 10,000 créditos").
 2. **El Embudo Anti-Fricción (Doble Nivel Gratis):**
    - *Gratis Permanente (Modo Local):* Las herramientas bajadas de GitHub operan en un modo "Zero-Quota" (Ej: Regex/RSS). Son útiles, previenen haters, pero no traen el poder mágico.
-   - *Bolsa de Prueba (El "Aha! Moment"):* Al registrarse en `gustavo-hq.com` mediante **GitHub OAuth** (filtro anti-bots/freeloaders), reciben 500 créditos gratis. Obtienen una API Key secreta.
+   - *Bolsa de Prueba (El "Aha! Moment"):* Al registrarse en `hq.gustavoosorio.dev` mediante **GitHub OAuth** (filtro anti-bots/freeloaders), reciben 500 créditos gratis. Obtienen una API Key secreta.
 3. **Bloqueo y Migración (Lock-in):** Introducen la API Key en el CLI local. La herramienta pasa a "Modo AI", contacta al `cazador-engine` privado, y quema créditos revelando el verdadero valor. Al acabarse los 500 créditos, la conversión a pago es puramente orgánica.
 
 ---
@@ -117,7 +117,7 @@ En CADA video, tu "set de grabación" debe incluir:
 ## 8. ESTADO ACTUAL DE LA INFRAESTRUCTURA (Junio 17, 2026)
 
 - **Workspace HQ (@GustavoOsorioDev):** Preparado. Contiene estrategia y logística.
-- **Proyecto Video 1 (cazador-cli):** [COMPLETADO] El núcleo `cazador_v3.py` fue refactorizado exitosamente para el Hito 1.
+- **Proyecto Video 1 (cazador-cli):** [COMPLETADO] El núcleo `src/main.py` fue refactorizado exitosamente para el Hito 1.
   - *Técnica:* Implementación de **"Sigilo RSS"** para eludir el error `403` de Reddit sin tokens.
   - *Filtrado:* Escáner de **patrones de frustración sintáctica** (ej. "nightmare", "struggling").
   - *Ingeniería:* Uso de `Pydantic` (Contrato de Datos) y `Rich` (Visualización Premium).

@@ -2,7 +2,6 @@
 
 ```python
 from pydantic import BaseModel, ConfigDict
-from typing import List
 
 class SoftwareArchitect(BaseModel):
     model_config = ConfigDict(frozen=True, str_strip_whitespace=True)
@@ -11,7 +10,7 @@ class SoftwareArchitect(BaseModel):
     rol: str = "Software Architect & Micro-SaaS Builder"
     filosofia: str = "Ingeniería real. Sin vibes."
     framework_base: str = "Spec-Driven Development (CSDD)"
-    arsenal: List[str] = ["Python", "SQLite/PGSQL", "Local LLMs", "Hardware Dedicado"]
+    arsenal: list[str] = ["Python", "SQLite/PGSQL", "Local LLMs", "Hardware Dedicado"]
     estado: str = "Construyendo ecosistemas en público bajo estricto rigor técnico"
 ```
 
@@ -27,7 +26,7 @@ class SoftwareArchitect(BaseModel):
 Divido mis sistemas bajo reglas estrictas de privacidad operativa.
 
 ### 1. El Foso Comercial (Privado)
-Mi motor orquestador B2B. Hardware enfocado en extracción, clasificación de datos y análisis cuántitativo constante de mercados. Funciona silenciosamente en el background evaluando rentabilidad en nichos desatendidos. **(Código y lógica 100% cerrados).**
+Mi motor orquestador B2B. Hardware enfocado en extracción, clasificación de datos y análisis cuantitativo constante de mercados. Funciona silenciosamente en el background evaluando rentabilidad en nichos desatendidos. **(Código y lógica 100% cerrados).**
 
 ### 2. Arsenal Abierto (Open Source)
 Líneas de código de grado producción, scripts crudos y utilidades liberadas a la comunidad. Código real que resuelve problemas sin vender humo. Todo diseñado para funcionar rápido y limpio.
@@ -46,7 +45,7 @@ Líneas de código de grado producción, scripts crudos y utilidades liberadas a
 
 ## 📡 Terminal de Acceso
 
-Construyo y refactorizo infraestructuras complejas semana a semana, documentando el proceso completo para combatir el software basura autogenerado. Únete a la transmisión logística.
+Despliegue y refactorización de infraestructuras críticas. Documentación de protocolos para la erradicación del software basura. Sintoniza la transmisión logística de ingeniería.
 
-> **[ ▶️ YouTube ]** 👉 (Añade el link a tu canal de YouTube aquí)
-> **[ 🌐 Red Central ]** 👉 gustavo-hq.com (Distribución de Créditos y API Keys - Próximamente)
+> **[ ▶️ YouTube ]** 👉 https://www.youtube.com/@GustavoOsorioDev
+> **[ 🌐 Red Central ]** 👉 hq.gustavoosorio.dev (Distribución de Créditos y API Keys - Próximamente)
