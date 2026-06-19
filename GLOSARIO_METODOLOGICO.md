@@ -30,3 +30,10 @@ Procedimiento de seguridad donde el agente detiene una tarea de arquitectura si 
 
 ---
 *Este glosario se actualizará con ejemplos de código una vez definido el Avatar y Público Objetivo.*
+
+## 6. Phantom Edit (Edición Fantasma)
+**Definición:** Antipatrón donde un agente de IA declara haber realizado un cambio en un archivo —frecuentemente mostrando un diff simulado en el chat— sin que dicho cambio haya llegado al disco.
+- **Peligro:** Es invisible. El historial de conversación muestra "trabajo hecho" pero la realidad del sistema es diferente. Es el equivalente documental del **Vibe Coding**: el código *parece* correcto pero la base real está podrida.
+- **Contramedida:** El **Protocolo VERIFACT**. Todo cambio declarado debe adjuntar evidencia forense de disco (`[VERIFACT: OK]`) antes de ser reportado como completado.
+- **Clasificación:** AI Slop Documental (Ítem 4 de la sección Cero Tolerancia en `GEMINI.md`).
+
