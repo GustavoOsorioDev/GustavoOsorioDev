@@ -39,13 +39,14 @@ Líneas de código de grado producción, scripts crudos y utilidades liberadas a
 ```text
 [OK]  Build-in-Public Framework   ██████████ 100%
 [OK]  Cazador CLI (Zero-Quota)    ██████████ 100%
-[RUN] Cazador Engine (Core/Priv)  ████████░░ 80%
-[RUN] OAuth & Gestión de API Keys ████░░░░░░ 40%
+[RUN] Cazador Engine (Core/Priv)  ████████░░  80%
+[RUN] OAuth & Gestión de API Keys ████░░░░░░  40%
 ```
 
 ## 📡 Terminal de Acceso
 
 Despliegue y refactorización de infraestructuras críticas. Documentación de protocolos para la erradicación del software basura. Sintoniza la transmisión logística de ingeniería.
 
-> **[ ▶️ YouTube ]** 👉 https://www.youtube.com/@GustavoOsorioDev
-> **[ 🌐 Red Central ]** 👉 hq.gustavoosorio.dev (Distribución de Créditos y API Keys - Próximamente)
+> **[ ▶️ YouTube ]** &nbsp; 👉 &nbsp; [youtube.com/@GustavoOsorioDev](https://www.youtube.com/@GustavoOsorioDev)
+>
+> **[ 🌐 Red Central ]** &nbsp; 👉 &nbsp; [hq.gustavoosorio.dev](https://hq.gustavoosorio.dev) (Distribución de Créditos)
