@@ -1,3 +1,9 @@
+<!--
+GITHUB REPOSITORY METADATA (For copy/paste)
+Description: Metodología y documentación matriz de Gustavo Osorio. Ecosistema para la construcción de Micro-SaaS bajo Spec-Driven Development (SDD), contratos lógicos (Pydantic) y la erradicación del código autogenerado basura (AI Slop).
+Topics: software-architecture, micro-saas, python, pydantic, spec-driven-development, build-in-public, anti-slop, cli-tools
+-->
+
 ### ░ @GustavoOsorioDev ░
 
 ```python
